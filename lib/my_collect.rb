@@ -2,11 +2,12 @@ def my_collect(array)
   if block_given?
     i = 0
 
+    var newArray = []
     while i < array.length
-      yield(array[i])
+      newArray.push(yield(array[i]))
       i += 1
     end
-    array
+
   else
     return 'A block was not passed.'
   end
