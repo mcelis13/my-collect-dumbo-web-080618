@@ -7,7 +7,7 @@ def my_collect(array)
       newArray.push(yield(array[i]))
       i += 1
     end
-    
+
     newArray
   else
     return 'A block was not passed.'
