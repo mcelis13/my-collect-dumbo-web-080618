@@ -6,6 +6,7 @@ def my_collect(array)
       yield(array[i])
       i++
       array
+    end
   else
     return 'A block was not passed.'
   end
